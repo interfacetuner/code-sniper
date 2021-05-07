@@ -4,8 +4,9 @@ const mongoose = require('mongoose');
 
 
 const snippetSchema = new Schema({
-  snippet: String,
   level: String,
+  snippet: String,
+  code: String,
 }, { timestamps: true });
     
 
