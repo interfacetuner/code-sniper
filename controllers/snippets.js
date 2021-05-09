@@ -18,7 +18,6 @@ async function create(req, res) {
     try {
       const snippet = await Snippet.create(req.body);
       res.status(201).json(snippet);
-      //index(req, res);
     } catch (error) {
       res.status(401).json({ error: 'Something went wrong' }
       );
