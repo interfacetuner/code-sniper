@@ -18,7 +18,7 @@ require('./config/database');
 app.use(morgan('dev'));
 app.use(express.json()); // converts incoming json into req.body
 app.use(cors());
-
+app.use(express.static('routes'));
 
 
 // mount our routes app.use()
